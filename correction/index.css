@@ -6,6 +6,9 @@
     --shadow: 3px 1px 5px rgb(236, 125, 144);
 
 }
+*{
+    box-sizing: border-box;
+}
 
 html{
     box-sizing: border-box;
@@ -16,6 +19,7 @@ body{
     background: var(--secondary);
    margin: 30px 50px;
     line-height: 1.4;
+    
 }
 
 .btn{
@@ -48,7 +52,7 @@ grid-gap: 20px;
 .main-nav a {
     background: var(--secondary);
     display: block;
-    padding: 0.8;
+    padding: 0;
     text-decoration: none;
     text-align: center;
     color: var(--third);
@@ -114,16 +118,13 @@ padding: 4em;
     grid-area: top-box-a;
 }
 
-.top-box-b{
-    grid-area: top-box-a;
-}
-
 /*Boxes*/
 .boxes{
     display:grid;
-    grid-gap:20px;
-    grid-template-columns: repeat(auto-fit, minmax (200px, 1fr)) ;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax 200px);
 }
+
 .box {
 background: var(--primary);
 text-align: center;
@@ -179,6 +180,7 @@ padding: 0.3em;
     display: flex;
     grid-column: 7/9;
     justify-content: end;
+    
 }
 .text-footer{
     grid-column: 1/4;
@@ -200,11 +202,11 @@ padding: 0.3em;
 .main-nav ul{
     grid-template-columns: 1fr;
 }
+
 .info{
-    grid-row: 1fr;
-
-
+    grid-row: auto;
 }
+
 .info .btn{
     display: block;
     text-align: center;

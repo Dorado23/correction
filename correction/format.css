@@ -92,7 +92,7 @@ body{
     color: whitesmoke;
     font-size: 24px;
     font-weight: 600;
-    border-radius: 1px solid whitesmoke;
+    border: 1px solid whitesmoke;
 }
 
 .mat-preferens{
@@ -140,7 +140,8 @@ body{
         min-width:280px;
     }
 }
-.user-input-box:nth-child{
+
+.user-input-box:nth-child(1) {
 justify-content: space-between;
 }
 
